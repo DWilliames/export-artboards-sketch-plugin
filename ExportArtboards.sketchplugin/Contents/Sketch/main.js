@@ -50,6 +50,12 @@ function run(context) {
   selection.forEach(function(artboard) {
     var slice = MSSliceLayer.sliceLayerFromLayer(artboard)
 
+    var rect = artboard.absoluteRect()
+    slice.absoluteRect().setX(rect.origin().x)
+    slice.absoluteRect().setY(rect.origin().y)
+    slice.absoluteRect().setWidth(rect.size().width)
+    slice.absoluteRect().setHeight(rect.size().height)
+
     // Create a new slice for each artboard
     // and add all the same export properties to the new slice
     artboard.exportOptions().exportFormats().forEach(function(exportOption, index) {

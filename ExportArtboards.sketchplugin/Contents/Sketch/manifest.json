@@ -3,7 +3,7 @@
   "description": "Export selected artboards, by temporarily placing a slice around them and exporting it",
   "author": "David Williames",
   "homepage": "https://github.com/DWilliames/export-artboards",
-  "version": 1.0,
+  "version": 1.1,
   "identifier": "com.davidwilliames.nested-artboards",
   "compatibleVersion": 44,
   "bundleVersion": 1,
